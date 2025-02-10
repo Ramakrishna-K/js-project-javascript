@@ -1,0 +1,986 @@
+
+/* Basic reset and layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  background-image: url("./rail-way.jpg");
+  /* background-image: url("./HD-wallpaper-anime-train-car-sky.jpg"); */
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgba(10, 10, 10, 0.222);
+  backdrop-filter: blur(10px);
+  /* opacity: 0.9; */
+  position: relative;
+  left:30%;
+  width: 500px;
+  border-radius: 15px;
+  
+}
+
+h1 {
+  font-size: 2.5em;
+  color: whitesmoke;
+  /* text-shadow:0cm; */
+}
+
+.search-section {
+  margin-bottom: 30px;
+  
+}
+
+.search-section input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-weight:bold;
+}
+
+.search-section button {
+  padding: 10px;
+  background-color: #004d99;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.search-section button:hover {
+  background-color: #003366;
+}
+
+#results {
+  margin-top: 20px;
+}
+
+#resultsContainer {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+main{
+  width:100%;
+  height:470px;
+}
+article{
+  width: 800px;
+  /* height:auto; */
+  border: 2px solid black;
+  position: relative;
+  left:20%;
+  margin-top: 80px;
+  border-radius: 15px;
+  /* opacity: 0.9; */
+  padding:20px;
+  background-color: rgba(10, 10, 10, 0.222);
+  /* display: flex; */
+  /* justify-content: center; */
+  gap: 20px;
+  /* background-image: url("./HD-wallpaper-anime-train-car-sky.jpg"); */
+  /* background-image: url("./thumb-1920-581060.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+}
+footer{
+  position: relative;
+  left:8%;
+  /* margin-top: 70px; */
+  width:80%;
+  height:50px;
+  background-color: rgba(10, 10, 10, 0.222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  backdrop-filter: blur(10px);
+  font-weight: bold;
+  border-radius: 15px;
+  a{
+    color: rgb(242, 231, 231);
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width:320px){
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+  
+  body {
+    color: #211d1d;
+    padding: 20px;
+    /* background-image: url("./HD-wallpaper-anime-train-car-sky.jpg"); */
+    /* background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+}
+  
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    left:1%;
+    font-size: 10px;
+    width: 280px;
+    /* border-radius: 15px; */
+    
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .search-section {
+    margin-bottom: 30px;
+    
+  }
+  
+  .search-section input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 115px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight:2px;
+    font-size: 10px;
+  }
+  
+  .search-section button {
+    padding: 10px;
+    background-color: #2e5e8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  #click{
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .search-section button:hover {
+    background-color: #289647;
+  }
+  
+  #results {
+    margin-top: 10px;
+    color: white;
+    font-size: x-small;
+  }
+  
+  #resultsContainer {
+    padding: 25px;
+  }
+  main{
+    
+    width:1px;
+    height:470px;
+  }
+  article{
+    width: 288px;
+    height:auto;
+    margin-top: 50px;
+
+   
+  }
+ 
+  footer{
+    padding-left: 20px;
+    left:1%;
+    width:288px;
+  
+    font-size: medium;
+    a{
+      color: rgb(37, 22, 23);
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (min-width:320px){
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+  
+  body {
+    color: #211d1d;
+    padding: 20px;
+    /* background-image: url("./HD-wallpaper-anime-train-car-sky.jpg"); */
+    /* background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+}
+  
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    left:1%;
+    font-size: 10px;
+    width: 280px;
+    /* border-radius: 15px; */
+    
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .search-section {
+    margin-bottom: 30px;
+    
+  }
+  
+  .search-section input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 115px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight:2px;
+    font-size: 10px;
+  }
+  
+  .search-section button {
+    padding: 10px;
+    background-color: #2e5e8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  #click{
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .search-section button:hover {
+    background-color: #289647;
+  }
+  
+  #results {
+    margin-top: 10px;
+    color: white;
+    font-size: x-small;
+  }
+  
+  #resultsContainer {
+    padding: 25px;
+  }
+  main{
+    
+    width:1px;
+    height:470px;
+  }
+  article{
+    width: 288px;
+    height:auto;
+    margin-top: 50px;
+
+   
+  }
+ 
+  footer{
+    padding-left: 20px;
+    left:1%;
+    width:288px;
+  
+    font-size: medium;
+    a{
+      color: rgb(37, 22, 23);
+      text-decoration: none;
+    }
+  }
+}
+/* Basic reset and layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #211d1d;
+  padding: 20px;
+  background-image: url("rail-way.jpg");
+  /* background-image: url("./HD-wallpaper-anime-train-car-sky.jpg"); */
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgba(108, 102, 102, 0.222);
+  backdrop-filter: blur(10px);
+  /* opacity: 0.9; */
+  position: relative;
+  left:30%;
+  width: 500px;
+  border-radius: 15px;
+  
+}
+
+h1 {
+  font-size: 2.5em;
+  color: white;
+  /* text-shadow:0cm; */
+}
+
+.search-section {
+  margin-bottom: 30px;
+  
+}
+
+.search-section input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-weight:bold;
+}
+
+.search-section button {
+  padding: 10px;
+  background-color: #2e5e8f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.search-section button:hover {
+  background-color: #289647;
+}
+
+#results {
+  margin-top: 20px;
+  color: white;
+}
+
+#resultsContainer {
+  padding: 15px;
+  background-color: rgb(240, 230, 230);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+main{
+  width:100%;
+  height:470px;
+}
+article{
+  width: 800px;
+  border: 2px solid black;
+  position: relative;
+  left:20%;
+  margin-top: 80px;
+  border-radius: 15px;
+  padding:20px;
+  background-color: rgba(10, 10, 10, 0.222);
+  gap: 20px;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+}
+footer{
+  position: relative;
+  color: white;
+  left:8%;
+  width:80%;
+  height:50px;
+  background-color: rgba(10, 10, 10, 0.222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  backdrop-filter: blur(10px);
+  font-weight: bold;
+  border-radius: 15px;
+  a{
+    color: rgb(236, 218, 220);
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width:320px){
+ 
+  
+  body {
+    color: #211d1d;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+  
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    left:1%;
+    font-size: 10px;
+    width: 280px;
+    
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .search-section {
+    margin-bottom: 30px;
+    
+  }
+  
+  .search-section input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 115px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight:2px;
+    font-size: 10px;
+  }
+  
+  .search-section button {
+    padding: 10px;
+    background-color: #2e5e8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  #click{
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .search-section button:hover {
+    background-color: #289647;
+  }
+  
+  #results {
+    margin-top: 10px;
+    color: white;
+    font-size: x-small;
+  }
+  
+  #resultsContainer {
+    padding: 15px;
+    color: #211d1d;
+  }
+  main{
+    
+    width:1px;
+    height:470px;
+  }
+  article{
+    width: 288px;
+    height:auto;
+    margin-top: 50px;
+
+   
+  }
+ 
+  footer{
+    padding-left: 20px;
+    left:1%;
+    width:100%;
+  
+    font-size: medium;
+    a{
+      color: rgb(37, 22, 23);
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (min-width:360px){
+ 
+  
+  body {
+    color: #211d1d;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+}
+  
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 1px;
+    margin-left: 7px;
+    left:2%;
+    font-size: 12px;
+    width: 300px;
+    
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  .search-section {
+    margin-bottom: 30px;
+    
+  }
+  
+  .search-section input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 125px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight:2px;
+    font-size: 10px;
+  }
+  
+  .search-section button {
+    padding: 10px;
+    background-color: #2e5e8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  #click{
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .search-section button:hover {
+    background-color: #289647;
+  }
+  
+  #results {
+    margin-top: 10px;
+    color: white;
+    font-size: x-small;
+  }
+  
+  #resultsContainer {
+    padding: 15px;
+    color: #211d1d;
+  }
+  main{
+    
+    width:1px;
+    height:470px;
+  }
+  article{
+    width: 340px;
+    height:auto;
+    margin-top: 50px;
+
+   
+  }
+ 
+  footer{
+    padding-left: 20px;
+    left:1%;
+    width:100%;
+  
+    font-size: 1px;
+    a{
+      color: rgb(37, 22, 23);
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media only screen and (min-width:375px){
+  body {
+    color: #211d1d;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+}
+  
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    left:1.5%;
+    font-size: 10px;
+    width: 320px;
+    
+  }
+  
+  h1 {
+    padding-top: 10px;
+    font-size: 2.3em;
+  }
+  
+  .search-section input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 135px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight:2px;
+    font-size: 10px;
+  }
+  
+  .search-section button {
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  #click{
+    display: flex;
+    margin-left: 35px;
+  }
+  
+  .search-section button:hover {
+    background-color: #289647;
+  }
+  
+  #results {
+    margin-top: 10px;
+    color: white;
+    font-size: x-small;
+  }
+  
+  #resultsContainer {
+    padding: 15px;
+    color: #211d1d;
+  }
+  main{
+    
+    width:10px;
+    height:450px;
+  }
+  article{
+    width: 335px;
+    height:auto;
+    margin-top: 50px;
+
+   
+  }
+ 
+  footer{
+    padding-left: 20px;
+    left:1%;
+    width:335px;
+  
+    font-size: 13px;
+    a{
+      color: rgb(37, 22, 23);
+      text-decoration: none;
+    }
+  }
+}
+@media only screen and (min-width:425px){
+  body {
+    padding: 10px;
+}
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    left:1.5%;
+    font-size: 12px;
+    width: 385px;
+    
+  }
+  h1 {
+    padding-top: 10px;
+    font-size: 2.3em;
+  }
+  
+  .search-section input {
+    margin-right: 5px;
+    margin-left: 14px;
+    
+  }
+  
+  .search-section button {
+    padding: 10px;
+    margin-left: 25px;
+    font-size: 12px;
+  }
+  #click{
+    display: flex;
+    margin-left: 55px;
+  }
+  
+  .search-section button:hover {
+    background-color: #289647;
+  }
+  
+  #results {
+    margin-top: 10px;
+    color: white;
+    font-size: x-small;
+  }
+  
+  #resultsContainer {
+    padding: 18px;
+    color: #211d1d;
+  }
+  main{
+    
+    width:10px;
+    height:450px;
+  }
+  article{
+    width: 385px;
+    height:auto;
+    margin-left: 10px;
+    margin-top: 50px;
+
+   
+  }
+ 
+  footer{
+    padding-left: 20px;
+    left:1%;
+    width:385px;
+    margin-left: px;
+    font-size: 15px;
+    a{
+      color: rgb(37, 22, 23);
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (min-width:768px){
+  body {
+    padding: 10px;
+}
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 115px;
+    left:1.5%;
+    font-size: 18px;
+    width: 485px;
+    
+  }
+  h1 {
+    padding-top: 10px;
+    font-size: 1.7em;
+  }
+  
+  .search-section input {
+    padding: 8px;
+    width: 220px;
+    margin-right: 5px;
+    margin-left: 25px;
+    font-size: 15px;
+    
+  }
+  
+  .search-section button {
+    padding: 8px;
+    margin-left: 35px;
+    font-size: 15px;
+  }
+  #click{
+    display: flex;
+    margin-left: 135px;
+  }
+  #results {
+    color: white;
+    font-size: 12px;
+  }
+  
+  #resultsContainer {
+    padding: 18px;
+    margin-right: 10px;
+    color: #211d1d;
+  }
+  main{
+        height:450px;
+  }
+  article{
+    width: 550px;
+    height:auto;
+    margin-left: 100px;
+  }
+ 
+  footer{
+    padding: 15px;  
+    padding-left:40px ;  
+    left:1%;
+    width:550px;
+    height: auto;
+    font-size: 20px;
+    margin-left: 95px;
+    margin-bottom: 40px;
+    a{
+      color: rgb(37, 22, 23);
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (min-width:1024px){
+ 
+  header {
+    margin-left: 225px;
+    font-size: 18px;
+    width: 515px;
+    
+  }
+  h1 {
+    padding-top: 10px;
+    font-size: 1.9em;
+  }
+  
+  .search-section input {
+    padding: 8px;
+    width: 220px;
+    margin-right: 5px;
+    margin-left: 25px;
+    font-size: 15px;
+    margin-bottom: 1px;
+    
+  }
+  
+  .search-section button {
+    padding: 9px;
+    margin-left: 35px;
+    font-size: 15px;
+
+  } #click{
+    display: flex;
+    margin-left: 135px;
+    margin-top: 7px;
+  }
+  #resultsContainer {
+    padding: 25px;
+    margin-right: 10px;
+    color: #211d1d;
+  }
+  main{
+    
+    height:460px;
+  }
+  article{
+    width: 600px;
+    height:450px;
+    margin-left: 200px;
+  }
+ 
+  footer{
+    padding: 15px;  
+    width:550px;
+    font-size: 20px;
+    margin-left: 215px;
+    a{
+      color: rgb(220, 199, 199);
+      text-decoration: none;
+    }
+  }
+}
+@media only screen and (min-width:1440px){
+ 
+  header {
+    margin-left: 360px;
+    font-size: 22px;
+    width: 675px;
+    
+  }
+  h1 {
+    padding: 10px;
+    font-size: 1.9em;
+  }
+  
+  .search-section input {
+    padding: 12px;
+    width: 220px;
+    margin-right: 5px;
+    margin-left: 65px;
+    font-size: 15px;
+    margin-bottom: 1px;
+    
+  }
+  
+  .search-section button {
+    padding: 12px;
+    margin-left: 35px;
+    font-size: 15px;
+
+  } #click{
+    display: flex;
+    margin-left: 185px;
+    margin-top: 7px;
+  }
+  #resultsContainer {
+    padding: 30px;
+    margin-right: 10px;
+    color: #211d1d;
+  }
+  main{
+    
+    height:490px;
+  }
+  article{
+    width: 700px;
+    height:470px;
+    margin-left: 370px;
+  }
+ 
+  footer{
+    padding: 25px;  
+    width:695px;
+    font-size: 25px;
+    margin-left: 360px;
+    a{
+      color: rgb(184, 148, 148);
+      text-decoration: none;
+    }
+  }
+}

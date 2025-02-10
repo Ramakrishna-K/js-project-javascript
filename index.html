@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Train Information</title>
+    <link rel="stylesheet" href="trainInfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1>Real-Time Train Information <i class="fa-solid fa-train"></i></h1>
+    </header>
+
+    <main>
+
+        <article>
+        <section class="search-section">
+            <input type="text" id="stationName" placeholder="Enter station name" required />
+            <button onclick="searchStation()"><i class="fa-brands fa-searchengin"></i> Search Station</button>
+            <br><br>
+
+            <input type="text" id="trainNumber" placeholder="Enter train number" required/>
+            <button onclick="searchTrainNumber()"><i class="fa-brands fa-searchengin"></i> Search Train </button>
+            <br><br>
+
+            <input type="text" id="fromStation" placeholder="From station" required />
+            <input type="text" id="toStation" placeholder="To station" required/>
+            <button  id="click"   onclick="searchTrainsBetweenStations()"><i class="fa-brands fa-searchengin"></i> Search Trains Between Stations</button>
+            <br><br>
+
+            <input type="text" id="pnrNumber" placeholder="Enter PNR number" required/>
+            <button onclick="checkPNRStatus()"><i class="fa-solid fa-list-check"></i>  Check PNR Status</button>
+        </section>
+
+        <section id="results">
+            <h2><i class="fa-solid fa-square-poll-vertical"></i> Results:</h2>
+            <div id="resultsContainer"></div>
+        </section>
+        </article>
+        
+    </main>
+    <footer>
+        <i class="fa-solid fa-train"></i>
+        <p>&#169 2024</p>
+        <p>Developed by <a href="https://github.com/Ramakrishna-K"> RAMA KRISHNA</a></p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
